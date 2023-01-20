@@ -1,0 +1,27 @@
+{
+  "name": "my-first-webserver",
+  "version": "0.0.1",
+  "description": "My first web server!",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a01-mateocorrea99.git"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "first"
+  ],
+  "author": "@mateocorrea99",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a01-mateocorrea99/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a01-mateocorrea99#readme",
+  "dependencies": {
+    "minimalist": "^1.0.0"
+  }
+}
