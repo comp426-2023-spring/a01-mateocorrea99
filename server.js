@@ -1,9 +1,14 @@
 // Require http module
-
+const http = require('http');
 // Require fs module
-
+const fs = require('fs');
 // Require minimist module (make sure you install this one via npm).
-
+try {
+    const data = fs.readFileSync('./public/index.html', 'utf8');
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 
 // Define a const `port` using the argument from the command line. 
