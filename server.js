@@ -4,15 +4,13 @@ const http = require('http');
 const fs = require('fs');
 // Require minimist module (make sure you install this one via npm).
 const minimist = require('minimist');
-const { exit } = require('process');
-const { Console } = require('console');
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
-var argument = minimist(process.argument.slice(2));
+var argv = minimist(process.argv.slice(2));
 var z = 3000;
 
-if (argument['port'] != undefined) {
-  z = argument['port'];
+if (argv['port'] != undefined) {
+  z = argv['port'];
 }
 
 // Define a const `port` using the argument from the command line. 
